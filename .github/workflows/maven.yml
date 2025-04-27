@@ -8,8 +8,9 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
+    environment:
+      name: dev  # <- Aqui está o ambiente
 
     steps:
     - name: Checkout repository
